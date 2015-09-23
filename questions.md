@@ -8,8 +8,7 @@ tails, quartile, scatterplot, outlier
 *2) describe these distributions using 1 word each*   
 normal distribution, exponential distribution, uniform distribution 
 
-*3) take a look at one of the datasets in this repo. what are some ways you could summarize this
-data?* 
+*3) take a look at one of the datasets in this repo. what does it describe? what are some ways you could summarize this data?* 
 
 *4) what's the difference between an array and an associative array? how are
 these implemented in python? what are some other fundamental python data 
