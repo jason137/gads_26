@@ -1,4 +1,4 @@
-## small-group questions
+## questions
 
 *1) define these statistical terms*  
 - distribution
@@ -41,13 +41,5 @@ structures?*
 - lazy evaluation 
 - computational complexity
 
-*6) take a look at* `dartboards.png`. *how would you characterize the accuracy for
-each target?*
-
-*7) use unix commands to perform the following tasks on one of the datasets in
-this repo*
-- print 10 first lines
-- count number of lines
-- print selected column/s
-- count number of fields
-- find/replace with regex
+*6) how would you characterize the accuracy for each of targets below?*  
+<img src="dartboards.png" align="middle", width=300>  
