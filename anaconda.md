@@ -10,4 +10,4 @@ note that this installation edits your system search path (!)
 if you don't like this, you can revert the change & create a separate shortcut
 to anaconda 
 - edit `~/.profile` 
-- create a symbolic link with `ln` (`man ln` for help) 
+- create a symbolic link with `ln -s` (`man ln` for help) 
