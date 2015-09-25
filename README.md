@@ -11,5 +11,5 @@ line...coming in the next day or two
 ## anaconda installation  
 https://github.com/jason137/gads_26/blob/master/anaconda.md
 
-## references  
+## general references  
 https://github.com/jason137/gads_26/blob/master/references.md
