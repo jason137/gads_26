@@ -159,14 +159,14 @@ The `cat` program prints the contents of a file to
 [stdout](http://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stderr).
 For this reason, `cat` is frequently used to initiate a chain of
 Unix commands that uses a file as its input (this is not the only way to do it,
-but it's the most flexible & intuitive way).
+but it's the most intuitive & flexible way).
 
 Next we have `awk`. The ins & outs of `awk` could (and do) fill many books.
 Strictly speaking, `awk` is its own programming language, and our
 command contains both an invocation and a short `awk` program (set off by
-single quotes). This program prints the number of fields per input line, denoted
-by `NF`. The `-F` flag tells `awk` which delimiter to use, in this case `\t` for
-the tab character.
+single quotes). For each input line, this program prints the number of fields
+that occur in the line, denoted by `NF`. The `-F` flag tells `awk` which delimiter to use,
+in this case `\t` for the tab character.
 
 The `sort` program does what it sounds like: sorts its input. It's necessary
 because the next program relies on sorted input.
