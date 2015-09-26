@@ -1,0 +1,45 @@
+PRESIDENT	POLITICAL PARTY
+George Washington	No Party Designation
+John Adams	Federalist
+Thomas Jefferson	Democratic-Republican
+James Madison	Democratic-Republican
+James Monroe	Democratic-Republican
+John Quincy	Johnalhoun
+Andrew Jackson	Democratic
+Martin Van Buren	Democratic
+William Henry Harrison	Whig
+John Tyler	Whig
+James Knox Polk	Democratic
+Zachary Taylor	Whig
+Millard Fillmore	Whig
+Franklin Pierce	Democratic
+James Buchanan	Democratic
+Abraham Lincoln	Union
+Andrew Johnson	Union
+Ulysses Simpson Grant	Republican
+Rutherford Birchard Hayes	Republican
+James Abram Garfield	Republican
+Chester Alan Arthur	Republican
+Stephen Grover Cleveland	Democratic
+Benjamin Harrison	Republican
+Stephen Grover Cleveland	Democratic
+William McKinley	Republican
+Theodore Roosevelt	Republican
+William Howard Taft	Republican
+Woodrow Wilson	Democratic
+Warren Gamaliel Harding	Republican
+Calvin Coolidge	Republican
+Herbert Clark Hoover	Republican
+Franklin Delano Roosevelt	Democratic
+Harry S Truman	Democratic
+Dwight David Eisenhower	Republican
+John Fitzgerald Kennedy	Democratic
+Lyndon Baines Johnson	Democratic
+Richard Milhous Nixon	Republican
+Gerald Rudolph Ford	Republican
+James Earl Carter, Jr.	Democratic
+Ronald Wilson Reagan	Republican
+George Herbert Walker Bush	Republican
+William Jefferson Clinton	Democratic
+George Walker Bush	Republican
+Barack Obama	Democratic
