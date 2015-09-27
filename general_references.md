@@ -4,11 +4,11 @@ off by the publication dates. If you want to buy one book to start with, make it
 
 ---
 **introductory**  
+Reda, Greg (2014). Principles of good data analysis.
+http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/
+
 Halevy, Norvig, Pereira (2010). The Unreasonable Effectiveness of Data.  
 http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf
-
-Mitchell (2006). The Discipline of Machine Learning.  
-http://www.cs.cmu.edu/~tom/pubs/MachineLearning.pdf
 
 Domingos (2012). A Few Useful Things to Know about Machine Learning.  
 https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
@@ -16,11 +16,11 @@ https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
 Dietterich (2003). Machine Learning.  
 http://web.engr.oregonstate.edu/~tgd/publications/nature-ecs-machine-learning.pdf
 
-Janert (2010), *Data Analysis with Open Source Tools*.  
-http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358
-
 Provost, Fawcett (2013). *Data Science for Business*.  
 http://www.amazon.com/Data-Science-Business-data-analytic-thinking/dp/1449361323
+
+Janert (2010), *Data Analysis with Open Source Tools*.  
+http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358
 
 Mitchell (1997), *Machine Learning*.  
 http://www.amazon.com/Learning-McGraw-Hill-International-Editions-Computer/dp/0071154671
@@ -63,7 +63,7 @@ http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/038740272
 ---
 Some additional links.
 
-sql tutorial  
+SQL tutorial  
 http://www.w3schools.com/sql/
 
 big O notation  
