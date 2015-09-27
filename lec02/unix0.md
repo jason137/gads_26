@@ -15,7 +15,7 @@ for any Unix program via the `man` page. For example, `man less` will show you
 the `less` docs. Use the up & down arrows to navigate (`fn` up/down to page up/down),
 and close the docs with `q`. 
 
-## looking at things
+## 1. looking at things
 
 The application you use to issue Unix commands is called a **terminal**. Mac OS
 X has a default application, called Terminal, or you can download a more
@@ -86,7 +86,7 @@ contents of our directory in long form.
     drwxr-xr-x   9 jason  staff   306 Sep 23 15:53 gits
 
 
-## making things
+## 2. making things
 
 We can make a new directory using the `mkdir` command. Make a new directory in
 your home directory called `tmp`, and then navigate to that directory with the
@@ -147,7 +147,7 @@ We can rename our file by moving it into a new file with `mv`:
     $ ls
     file0
 
-## navigating the file system
+## 3. navigating the file system
 
 You can think of navigating through the directories in your file system like
 moving between nodes in a tree. This would be difficult in practice if you had to
@@ -189,7 +189,7 @@ directory use the `rmdir` command:
     $ mkdir tmp2
     $ rmdir tmp2
 
-## the search path
+## 4. the search path
 
 An important attribute of your Unix session is the system **search path** it
 corresponds to. The search path is a string that represents the directories
@@ -244,9 +244,11 @@ to go further with data exploration at the command line.
 
 ## postscript
 
-Some Unix programs take longer than others to master, but the steep
-learning curve tends to come with pretty incredible gains in productivity.
+Some Unix programs take longer than others to master, but you'll find that the
+investments of time you make will bring incredible gains in productivity. Be patient, 
+search the internet for answers, discuss with your classmates, and ask lots of
+questions.
 
-One example is a text editor called `vim`, which you may find counterintuitive
-at first, but which pays good dividends as you gain
+One example of a steep learning curve is a text editor called `vim`, which you 
+may find counterintuitive at first, but which pays dividends as you gain
 [experience](http://vim-adventures.com/).
