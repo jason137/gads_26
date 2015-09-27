@@ -69,16 +69,12 @@ Suppose we wanted to get an idea of the typical ABV (alcohol content) for IPA's.
        2 9.5
        2 6.8
 
-Recall that `uniq` prints counts and values, so the output
-shows us that the most frequently occuring value of ABV for IPA's is 8, and
-this value occurs in 11 records.
-
 Again we're familiar with most of these programs, but the exception is `grep`.
 The `grep` program is a search tool. Its unusual [name](https://kb.iu.edu/d/abnd) contains an allusion to
 the technology that it's based on, namely **regular expressions**. The use of regular
 expressions, or [regexes](http://www.diveintopython.net/regular_expressions/),
 is a notoriously thorny subject, but one whose basic application is easily
-manageable and frequently invaluable in data processing.
+managed and frequently invaluable in data processing.
 
 Searching using regular expressions is performed by **pattern matching**. As
 the name implies, this requires both a pattern and some input to match it
@@ -87,13 +83,16 @@ meant to represent a broader set of strings. Input strings are compared to the
 pattern, and those that belong to this broader set (matches) are produced as output.
 
 In the present case, we've passed the string `IPA` to `grep` as the pattern, so 
-`grep` compares each input line to `IPA` and produce lines that match (in
+`grep` compares each input line to `IPA` and produces lines that match (in
 this case, exactly) as output. The final result of the above command is the
-top 10 most frequently occuring values of ABV for IPAs, or more precisely, the
-first 10 lines of the sorted frequency distribution of ABV for records matching
-the pattern IPA. 
+top 10 most frequently occuring values of ABV for IPA's, or more precisely, the
+first 10 lines of the (reverse) sorted frequency distribution of ABV for records matching
+the pattern `IPA`. 
 
-Now suppose alternatively we want to see ABV's for beers that aren't IPA's.
+Recall that `uniq` prints counts and values, so we see in particular that 8 is
+the most frequently occuring value of ABV for IPA's, and it occurs in 11 records.
+
+We can also use `grep` to look at ABV's for beers that are not IPA's:
 
     $ cat beer.tsv | grep -v IPA | cut -f5 | sort | uniq -c | sort -nrk1 | head
       13 10
@@ -110,14 +109,58 @@ Now suppose alternatively we want to see ABV's for beers that aren't IPA's.
 Passing the `-v` flag to `grep` tells it to invert matches, or to print the
 complement of its typical output.
 
-less (pattern matching)
-tr/sed
-- BASH
-executable scripts
+Let's take a look at the data now in a more interactive way, using `less`:
 
-PANDAS
-loading data into pandas
-data exploration
-summaries
-group by
+    $ less beer.tsv
 
+The `less` program opens its input file for reading, and it does so in a way
+that [minimizes the demands](https://en.wikipedia.org/wiki/Less_(Unix))
+placed on your computer's memory. As a result it's
+safe to use `less` with large files that you wouldn't be able to open using a
+text editor.
+
+Notice that the same arrow up/down and `fn` commands you used to navigate the
+`man` pages can be used here too (those `man` pages are really
+just text files opened in `less`). Also `gg` goes to the top of the file, and
+`G` goes to the end of the file.
+
+One of the useful things about `less` is that it supports pattern matching,
+similar to `grep`. For example, to search for occurences of the string `Trappist`,
+type `/Trappist` and then `return` at the `less` prompt. Now occurrences of the string
+will be highlighted, and you can navigate between them using `n` to move
+forward and `N` to move backward.
+
+You can also use `less` to catch input from
+[stdin](http://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stderr).
+For example, suppose you wanted to look at the (unsorted) frequencies of ABV
+across all records:
+
+    $ cat beer.tsv | cut -f5 | sort -n | uniq -c | less
+       2 
+       1 ABV
+       3 4
+      12 5
+       2 5.2
+       1 5.25
+       1 5.3
+       2 5.4
+       3 5.5
+       1 5.6
+    (...)
+
+Recall that `uniq` displays counts and values, so we see that there are 2
+blanks, 1 occurrence of `ABV` (in the header row), 3 occurrences of the
+minimum value, and 12 occurrences of the next lowest value. Piping the output
+to less allows us to scroll up & down to identify frequently occurring values
+and possible clusters, and to get a rough idea of the shape of the
+distribution. We can clearly see the tendency for ABV to come in increments of
+0.5, for example, as well as the fact that the maximum value is in 
+
+You may have noticed in your explorations that one of the fields is slightly
+wonky:
+
+    $ cat beer.tsv | grep Knuckle
+
+
+    $ cat beer.tsv | grep CuvÌ©e | tr CuvÌ©e Cuvee
+    $ cat beer.tsv | grep CuvÌ©e | sed s/CuvÌ©e/Cuvee/g
