@@ -34,7 +34,7 @@ field?
 
 7) What makes `less` a safe way to open a large text file?
 
-8) T or F: `sed` replaces each occurrence of the target string by default.
+8) T or F: `sed` replaces each occurrence of the input pattern by default.
 
 ### yes computers
 

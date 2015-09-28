@@ -201,7 +201,8 @@ syntax:
     149	Cantillon Cuvee Des Champions	Brasserie Cantillon	Gueuze	5	4.26	387
 
 This version uses the stream editor program, `sed`. This program performs the
-search & replace in one shot using the `/`-delimited syntax that we pass into it.
+search & replace in one shot using the `/`-delimited syntax that we pass into
+it. Note that this is another example of pattern matching!
 
 The first `s` in the `sed` syntax above specifies that we are performing a
 *substitution*. The next string is the string we want to search for, followed by the
