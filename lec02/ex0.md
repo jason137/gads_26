@@ -3,10 +3,10 @@
 # lec 2 exercises
 ## Unix basics
 
-Complete these exercises in groups of 2 or 3 **without** using your computers.
-Try to make your responses as simple as possible.
+Complete these exercises in groups of 2 or 3. Try to make your responses as
+simple as possible.
 
-___
+### no computers
 
 1) Define the following terms:
 - flag

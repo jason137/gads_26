@@ -6,16 +6,6 @@
 Complete these exercises in groups of 2 or 3. Try to make your responses as
 simple as possible.
 
-### pre-emptive warning
-
-Please avoid blowing away all or part of your hard drive while working at the
-command line.
-
-> The tool that is so dull that you cannot cut yourself on it is not likely to
-> be sharp enough to be either useful or helpful.  
-> – Tukey, *EDA*
-
-
 ### no computers
 
 1) Define the following terms:
