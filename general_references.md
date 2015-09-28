@@ -1,10 +1,13 @@
-## references
+# references
 These are good general data science references (in order of sophistication, more or less). Don't be put
 off by the publication dates. If you want to buy one book to start with, make it Janert.
 
----
-**introductory**  
-Reda, Greg (2014). Principles of good data analysis.
+## python
+Ceder (2010). *The Quick Python Book, Second Edition*.  
+http://www.amazon.com/Quick-Python-Book-Second-Edition/dp/193518220X
+
+## introductory
+Reda (2014). Principles of good data analysis.  
 http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/
 
 Halevy, Norvig, Pereira (2010). The Unreasonable Effectiveness of Data.  
@@ -25,8 +28,7 @@ http://www.amazon.com/Data-Analysis-Open-Source-Tools/dp/0596802358
 Mitchell (1997), *Machine Learning*.  
 http://www.amazon.com/Learning-McGraw-Hill-International-Editions-Computer/dp/0071154671
 
----
-**intermediate**  
+## intermediate
 Tan et al (2005). *Introduction to Data Mining*.  
 http://www.amazon.com/Introduction-Data-Mining-Pang-Ning-Tan/dp/0321321367
 
@@ -34,16 +36,15 @@ Ng (2004-). Stanford CS229 course materials.
 http://cs229.stanford.edu/materials.html  
 https://www.youtube.com/watch?v=UzxYlbK2c7E&list=PLJ_CMbwA6bT-n1W0mgOlYwccZ-j6gBXqE
 
----
-**advanced**  
+## advanced
 Hastie et al (2009). *The Elements of Statistical Learning*.  
 http://www.amazon.com/The-Elements-Statistical-Learning-Prediction/dp/0387848576
 
 Bishop (2007). *Pattern Recognition and Machine Learning*.  
 http://www.amazon.com/gp/product/0387310738/
 
----
-These are some references that go further into their respective topics.  
+## special topics
+These references are less general, and go further into their respective topics.  
 
 Friedman et al (1977). *Statistics*.  
 http://www.amazon.com/Statistics-4th-David-Freedman/dp/0393929728/
@@ -60,12 +61,10 @@ http://www.amazon.com/Data-Analysis-A-Bayesian-Tutorial/dp/0198568320
 Wasserman (2004). *All of Statistics*.  
 http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721
 
----
-Some additional links.
-
+## additional links
 SQL tutorial  
 http://www.w3schools.com/sql/
 
-big O notation  
+big-O notation  
 https://www.interviewcake.com/article/big-o-notation-time-and-space-complexity
 
