@@ -177,7 +177,7 @@ streets of the Unix documentation:
 
 > Repeated lines in the input will not be detected if they are not adjacent, so it
 > may be necessary to sort the files first.  
->\- *man uniq*
+>\- `man uniq`
 
 Passing the `-c` flag couples this output with a count, which
 gives us a quick look at the number of occurrences per record in the input

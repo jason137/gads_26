@@ -1,4 +1,4 @@
-## super basic Unix warmup
+## basic Unix warmup
 
 These are the Unix bunny slopes. It doesn't hurt to start here.
 
@@ -22,7 +22,7 @@ X has a default application, called Terminal, or you can download a more
 customizable alternative [here](https://www.iterm2.com/) if you're interested.
 
 The terminal exposes the **command prompt**, which is a text-based interface you
-use to communicate with the **shell**. The
+use to communicate with the system **shell**. The
 shell is the "outer part" of the operating system, and the part you typically
 interact with. The shell communicates with the "inner part" of the operating
 system, called the **kernel**, which is the the part that handles low-level tasks and
