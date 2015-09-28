@@ -12,13 +12,13 @@ command line.
 ## unix tutorials & exercises
 
 unix basics  
-https://github.com/jason137/gads_26/blob/master/lec02/unix0.md  
-https://github.com/jason137/gads_26/blob/master/lec02/ex0.md  
+https://github.com/jason137/gads_26/blob/master/lec02_unix/unix0.md  
+https://github.com/jason137/gads_26/blob/master/lec02_unix/ex0.md  
 
 data exploration w/ unix I  
-https://github.com/jason137/gads_26/blob/master/lec02/unix1.md  
-https://github.com/jason137/gads_26/blob/master/lec02/ex1.md  
+https://github.com/jason137/gads_26/blob/master/lec02_unix/unix1.md  
+https://github.com/jason137/gads_26/blob/master/lec02_unix/ex1.md  
 
 data exploration w/ unix II  
-https://github.com/jason137/gads_26/blob/master/lec02/unix2.md  
-https://github.com/jason137/gads_26/blob/master/lec02/ex2.md  
+https://github.com/jason137/gads_26/blob/master/lec02_unix/unix2.md  
+https://github.com/jason137/gads_26/blob/master/lec02_unix/ex2.md  
