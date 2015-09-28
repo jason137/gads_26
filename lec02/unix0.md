@@ -1,19 +1,23 @@
+<!-- author: Jason Dolatshahi -->
+
 ## basic Unix warmup
 
 These are the Unix bunny slopes. It doesn't hurt to start here.
 
 ## 0. preamble
 
-The `$` symbol below refers to the Unix command prompt.
-
-You can type `ctrl-L` to clear your screen in the terminal, and `ctrl-C` to
-cancel the current line of input and move to a new line. Also, `cmd` plus
-the left/right arrow keys allow you to jump to the beginning/end of an active prompt.
+Make sure you're careful when you're working at the command line. **There is no undo!**
 
 Remember that you can access the operating system's built-in **documentation**
 for any Unix program via the `man` page. For example, `man less` will show you
 the `less` docs. Use the up & down arrows to navigate (`fn` up/down to page up/down),
 and close the docs with `q`. 
+
+You can type `ctrl-L` to clear your screen in the terminal, and `ctrl-C` to
+cancel the current line of input and move to a new line. Also, `cmd` plus
+the left/right arrow keys allow you to jump to the beginning/end of an active prompt.
+
+Also note that the `$` symbol below refers to the Unix command prompt.
 
 ## 1. looking at things
 

@@ -1,3 +1,5 @@
+<!-- author: Jason Dolatshahi -->
+
 # data exploration at the command line
 
 ## 2. looking more closely

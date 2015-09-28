@@ -1,3 +1,5 @@
+<!-- author: Jason Dolatshahi -->
+
 # data exploration at the command line
 
 This introduction is meant to cover some basic exploratory steps to carry out when you
@@ -31,7 +33,7 @@ attached. You may find this **vocabulary** chart helpful as you go through the e
         <td>feature
 </table>
 
-Also note that the `$` character below denotes the Unix **command prompt**.
+Also note that the `$` character below denotes the Unix command prompt.
 
 Now that you're ready to go, start by
 [cloning](https://guides.github.com/activities/hello-world/) this
