@@ -5,7 +5,7 @@
 ## 2. looking more closely
 
 Now we know something about our dataset, namely its size & shape and what kind
-of data it contains. Next let's dig deeper to see what the data is actually
+of data it contains. Next let's dig deeper to see what the data is actuallyG
 telling us.
 
 Take another look at the first few records:
@@ -158,11 +158,59 @@ and possible clusters, and to get a rough idea of the shape of the
 distribution. We can clearly see the tendency for ABV to come in increments of
 0.5, for example, as well as the fact that the maximum value is in 
 
-You may have noticed in your explorations that one of the fields is slightly
-wonky:
+You may have noticed in your explorations that a couple of the records have text that
+is slightly wonky:
 
-    $ cat beer.tsv | grep Knuckle
+    $ cat beer.tsv | grep CuvÌ©e
+    146	CuvÌ©e Van De Keizer Blauw (Blue)	Brouwerij Het Anker	Belgian Strong Dark Ale	11	4.26	1050
+    149	Cantillon CuvÌ©e Des Champions	Brasserie Cantillon	Gueuze	5	4.26	387
 
+String formatting issues like this can sometimes cause headaches down the line.
+You can substitute all occurrences of this string for another string using the
+`tr` command:
 
     $ cat beer.tsv | grep CuvÌ©e | tr CuvÌ©e Cuvee
+    146	Cuvee Van De Keizer Blauw (Blue)	Brouwerij Het Anker	Belgian Strong Dark Ale	11	4.26	1050
+    149	Cantillon Cuvee Des Champions	Brasserie Cantillon	Gueuze	5	4.26	387
+
+The `tr` program is a translation program that maps occurrences of one string
+to another string. It can also be used to remove characters from a string by
+passing the `-d` flag:
+
+    $ head beer.tsv | tr -d aeiou
+    Rnk	Nm	Brwry	Typ	ABV	WR	Rvws
+    1	Hdy Tppr	Th Alchmst	Imprl IPA	8	4.69	3146
+    2	Plny Th Yngr	Rssn Rvr Brwng Cmpny	Imprl IPA	11	4.65	1572
+    3	Plny Th Eldr	Rssn Rvr Brwng Cmpny	Imprl IPA	8	4.64	6129
+    4	Fndrs CBS Imprl Stt	Fndrs Brwng Cmpny	Imprl Stt	10.6	4.63	2026
+    5	Fndrs KBS (Kntcky Brkfst Stt)	Fndrs Brwng Cmpny	Imprl Stt	11.2	4.61	4714
+    6	Zmb Dst	Thr Flyds Brwng C. & Brwpb	Amrcn Pl Al	6.4	4.61	2978
+    7	Trppst Wstvltrn 12 (XII)	Brwrj Wstvltrn (Snt-Sxtsbdj vn Wstvltrn)		10.2	4.61	2891
+    8	Brbn Cnty Brnd Cff Stt	Gs Islnd Br C.	Imprl Stt	14	4.61	2014
+    9	Prbl	Frstn Wlkr Brwng C.	Imprl Stt	12.5	4.55	2178
+
+Notice that this removes *every* vowel from the output of `head`.
+
+The first use of `tr` above illustrates a way to perform a **search & replace** at
+the command line. This method is effective and is frequently the right one to use,
+but sometimes it can be helpful to use a more compact (and transferrable)
+syntax:
+
     $ cat beer.tsv | grep CuvÌ©e | sed s/CuvÌ©e/Cuvee/g
+    146	Cuvee Van De Keizer Blauw (Blue)	Brouwerij Het Anker	Belgian Strong Dark Ale	11	4.26	1050
+    149	Cantillon Cuvee Des Champions	Brasserie Cantillon	Gueuze	5	4.26	387
+
+This version uses the stream editor program, `sed`. This program performs the
+search & replace in one shot using the `/`-delimited syntax that we pass into it.
+
+The first `s` in the `sed` syntax above specifies that we are performing a
+*substitution*. The next string is the string we want to search for, followed by the
+string we want to replace it with. The final `g` indicates that we want to
+perform the substitution *globally*, that is, for each occurrence on the line.
+
+Note that `sed` will always perform its substitutions for each line of input, but we
+have to pass the final `g` flag to tell it to substitute each occurrence
+of the target string for a given line.
+
+What makes this crazy `sed` syntax useful? It's the same search & replace
+syntax used by `vim`.
