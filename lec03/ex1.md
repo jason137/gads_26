@@ -31,20 +31,20 @@ these relationships breaking down?
 
 ### yes computers
 
-5) Use the file `shakespeare_words.tsv` to display the total words Shakespeare
+6) Use the file `shakespeare_words.tsv` to display the total words Shakespeare
 wrote by genre.
 
-6) Use the file `state_hts.tsv` to print the highest peak for only those states
+7) Use the file `state_hts.tsv` to print the highest peak for only those states
 beginning with the letter 'A'.
 
-7) Use the file `admissions.tsv` to look at a) total admissions rates by gender
+8) Use the file `admissions.tsv` to look at a) total admissions rates by gender
 and b) departmental admissions rates by gender. What do you think is going on
 here?
 
-8) Use the files `presidents.tsv` and `pres_parties.tsv` to find total time in
+9) Use the files `presidents.tsv` and `pres_parties.tsv` to find total time in
 office by party (hint: you may find the builtin Python `datetime` library useful).
 
-9) The file `epl.tsv` contains half-time and full-time scores for all soccer
+10) The file `epl.tsv` contains half-time and full-time scores for all soccer
 (football) matches in the English Premier League for the 2013-14 season. What
 is the probability of a team winning if they're ahead at half time? Does this
 probability change if the team is the home team (eg Team 1)?
