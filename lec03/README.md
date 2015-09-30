@@ -1,7 +1,7 @@
 # intro to pandas
 
 ![pandas]
-(http://giphy.com/gifs/bEqrzkLVWC3bW/html5)
+(http://i.giphy.com/bEqrzkLVWC3bW.gif)
 
 pandas I  
 https://github.com/jason137/gads_26/blob/master/lec03/pandas1.ipynb 
