@@ -41,5 +41,5 @@ structures?
 - lazy evaluation 
 - computational complexity
 
-6) How would you characterize the accuracy for each of targets below?
+6) How would you characterize the accuracy for each of targets below?  
 <img src="dartboards.png" align="middle", width=300>  
