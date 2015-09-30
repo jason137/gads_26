@@ -11,6 +11,9 @@ command line.
 
 ## unix tutorials & exercises
 
+![unix]
+(http://i.giphy.com/bZQvimlS7kuGc.gif)
+
 unix basics  
 https://github.com/jason137/gads_26/blob/master/lec02/unix0.md  
 https://github.com/jason137/gads_26/blob/master/lec02/ex0.md  
