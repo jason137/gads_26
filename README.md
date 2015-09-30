@@ -9,18 +9,24 @@ There are a handful of (small) datasets in this repo that you can use to
 practice the techniques we discuss in class. Don't hesitate to seek out & use
 other datasets that you find interesting! We can even post them here to share.
 
+## anaconda installation  
+https://github.com/jason137/gads_26/blob/master/anaconda.md
+
+## general data science references  
+https://github.com/jason137/gads_26/blob/master/general_references.md
+
 ## syllabus  
 lec 1 - intro & setup  
 lec 2 - data exploration & pre-processing with Unix  
 lec 3 - data exploration with pandas  
 
-exploratory data analysis
-- unix: iqr, histo, pctile, ecdf
-- viz: scatterplots, trends (smoothing), boxplots, bar charts, seasonality
-
 ## TODO
 - histo: add 5-num summary, range, iqr, scale for large N
 - more unix: avg, pctile, ecdf
+
+exploratory data analysis
+- unix: iqr, histo, pctile, ecdf
+- viz: scatterplots, trends (smoothing), boxplots, bar charts, seasonality
 
 concepts of machine learning
 - train/test/OOS
@@ -50,16 +56,9 @@ unsupervised learning
 - clustering
 - pca?
 
-relational databases
-- sql
+databases
+- sql?
 - nosql?
 
-recsys (1/2)
+recsys (1/2)  
 map-reduce (1/2)
-
-
-## general references  
-https://github.com/jason137/gads_26/blob/master/general_references.md
-
-## anaconda installation  
-https://github.com/jason137/gads_26/blob/master/anaconda.md
