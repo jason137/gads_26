@@ -24,6 +24,11 @@ think the distribution of these areas is skewed? Why or why not?
 4) How could you verify the shape of the distribution of areas in question 3 
 at the command line? How could you verify it using pandas?
 
+5) Usually skewness can be detected by the relationship between the mean and
+the median, but this relationship does not always hold. What relationships
+between mean and meadian would hold in the typical case? What could lead to
+these relationships breaking down?
+
 ### yes computers
 
 5) Use the file `shakespeare_words.tsv` to display the total words Shakespeare
