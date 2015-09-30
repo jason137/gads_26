@@ -46,6 +46,9 @@ http://www.amazon.com/gp/product/0387310738/
 ## special topics
 These references are less general, and go further into their respective topics.  
 
+NIST/SEMATECH e-Handbook of Statistical Methods (2012).  
+http://www.itl.nist.gov/div898/handbook/
+
 Friedman et al (1977). *Statistics*.  
 http://www.amazon.com/Statistics-4th-David-Freedman/dp/0393929728/
 

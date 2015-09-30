@@ -10,8 +10,54 @@ practice the techniques we discuss in class. Don't hesitate to seek out & use
 other datasets that you find interesting! We can even post them here to share.
 
 ## syllabus  
-lec 1 - intro  
-lec 2 - data exploration & preprocessing (Unix, pandas)
+lec 1 - intro & setup
+lec 2 - data exploration & pre-processing with Unix
+lec 3 - data exploration with pandas
+
+exploratory data analysis
+- pandas: numerical summaries
+- unix: iqr, histo, pctile, ecdf
+- viz: scatterplots, trends (smoothing), boxplots, bar charts, seasonality
+
+## TODO
+- histo: add 5-num summary, range, iqr, scale for large N
+- more unix: avg, pctile, ecdf
+
+concepts of machine learning
+- train/test/OOS
+- generalization error
+- overfitting
+- supervised/unsupervised
+- bias/variance
+- loss function
+- cross-validation
+- precision/recall
+
+classification
+- logistic regression
+- decision trees
+- naive bayes
+
+regression
+- linear regression
+- regularization
+
+ensembles 
+- bagging: random forests
+- boosting: gbt
+- lr as base clf?
+
+unsupervised learning
+- clustering
+- pca?
+
+relational databases
+- sql
+- nosql?
+
+recsys (1/2)
+map-reduce (1/2)
+
 
 ## general references  
 https://github.com/jason137/gads_26/blob/master/general_references.md
