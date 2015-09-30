@@ -18,7 +18,7 @@ https://github.com/jason137/gads_26/blob/master/general_references.md
 ## syllabus  
 lec 1 - intro & setup  
 lec 2 - data exploration & pre-processing with Unix  
-lec 3 - data exploration with pandas  
+lec 3 - data manipulation with pandas  
 
 ## TODO
 - histo: add 5-num summary, range, iqr, scale for large N
