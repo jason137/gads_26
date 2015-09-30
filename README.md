@@ -10,9 +10,9 @@ practice the techniques we discuss in class. Don't hesitate to seek out & use
 other datasets that you find interesting! We can even post them here to share.
 
 ## syllabus  
-lec 1 - intro & setup
-lec 2 - data exploration & pre-processing with Unix
-lec 3 - data exploration with pandas
+lec 1 - intro & setup  
+lec 2 - data exploration & pre-processing with Unix  
+lec 3 - data exploration with pandas  
 
 exploratory data analysis
 - pandas: numerical summaries
