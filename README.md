@@ -15,7 +15,6 @@ lec 2 - data exploration & pre-processing with Unix
 lec 3 - data exploration with pandas  
 
 exploratory data analysis
-- pandas: numerical summaries
 - unix: iqr, histo, pctile, ecdf
 - viz: scatterplots, trends (smoothing), boxplots, bar charts, seasonality
 
