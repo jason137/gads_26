@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# author: Jason Dolatshahi
 
 # problem 9
 # Use the files presidents.tsv and pres_parties.tsv to find total time in office
