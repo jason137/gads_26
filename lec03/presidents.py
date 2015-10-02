@@ -46,6 +46,6 @@ if __name__ == '__main__':
 # check this link out for datetime details
 # https://docs.python.org/3.5/library/datetime.html#strftime-strptime-behavior
 
-# NOTE removed index column from presidents.tsv!
+# NOTE removed index column from presidents.tsv & fixed JQA in pres_parties.tsv
 # NOTE can convert days to years
 # YEAR = datetime.timedelta(days=365.25) --> divide days / YEAR
