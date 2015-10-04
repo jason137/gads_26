@@ -64,6 +64,9 @@ http://www.amazon.com/Data-Analysis-A-Bayesian-Tutorial/dp/0198568320
 Wasserman (2004). *All of Statistics*.  
 http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721
 
+Cormen et al (2009). *Introduction to Algorithms, 3rd Edition*.
+http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844
+
 ## additional links
 SQL tutorial  
 http://www.w3schools.com/sql/
