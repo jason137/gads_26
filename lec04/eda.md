@@ -176,7 +176,8 @@ We can see the expected skew and tail behavior here, as well as some tendency
 toward clustering that's not visible in the 5NS.
 
 Here's an example that shows the average monthly CO2 concentration
-at the Mauna Loa observatory in Hawaii from Jan 2000 to Aug 2015:
+at the Mauna Loa observatory in Hawaii from Jan 2000 to Aug 2015
+(from `mauna_loa.tsv`):
 
     $ cat ../datasets/mauna_loa.tsv | cut -f4 | histo
     avg, transf = (none)
@@ -289,27 +290,17 @@ boxplot makes it impossible to overlook:
 
 A **scatterplot** is simply a representation of two features in a 2d
 plane. These are useful for illustrating relationships between features.
+As a result they're especially useful for **feature selection** and
+**feature engineering**.
 
-Here's a scatterplot that shows the relationship between features in
-`dinosaurs.tsv`:
-
-<p align="center">
-<img src="../images/scatter_dino.png">
-
-Recall the histograms of these features...this relationship
-has a subtle signature there (can you see what it is?), but it's not
-illustrated clearly until we plot it in 2d.
-
-Here's another scatterplot that shows the data from `mauna_loa.tsv` again:
+Recall the symmetric histogram from `mauna_loa.tsv`. Here's a scatterplot that
+shows the relationship in this data:
 
 <p align="center">
 <img src="../images/scatter_mauna_loa.png">
 
-Again, the linear trend illustrated here (plus the strong evidence of seasonality)
+The linear trend illustrated here (plus the strong evidence of seasonality)
 would be difficult to detect using other means.
-
-Because of their usefulness in uncovering relationships, scatterplots can be
-especially useful for **feature selection** and **feature engineering**.
 
 You may find this table helpful in recalling the various graphical techniques
 we've discussed and their uses:
