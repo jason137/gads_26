@@ -22,7 +22,7 @@ Copy your ans + terminal output and align it 4 spaces from the left. See the fir
 
 8) Create a sorted frequency distribution of the sizes of files & directories in your home directory using the du program. You will probably want to use a flag to keep the depth manageable.
 
-9) Re-create the output from #7 in human-readable format. How might this affect the sorting?
+9) Re-create the output from #8 in human-readable format. How might this affect the sorting?
 
 10) What technical difficulties might you face working with datasets/gdp.csv? Write a Unix command that demonstrates this.
 
