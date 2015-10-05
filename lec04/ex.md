@@ -31,5 +31,5 @@ the evolution of the probability of a home team (`Team 1`) victory over time
 (you can use a cumulative average or a moving average).
 
 6) Create a graphical summary of something you find interesting in the
-`datasets` directory. Why did you choose what you did, and what led you to the
-graphical representation you selected?
+`datasets` directory (or elsewhere!). Why did you choose what you did? What led
+you to the graphical representation you selected?
