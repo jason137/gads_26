@@ -175,46 +175,7 @@ file (elevation of the highest peak in each state):
 We can see the expected skew and tail behavior here, as well as some tendency
 toward clustering that's not visible in the 5NS.
 
-Here's another example that shows the distribution of masses of dinosaurs that
-appear in `dinosaurs.tsv`:
-
-    $ cat ../datasets/dinosaurs.tsv | cut -f3 | histo
-    mass_kg, transf = (none)
-    num_blanks = 0
-                (13.0, 581.7)    ****************
-              (581.7, 1150.4)    ***
-             (1150.4, 1719.1)    *
-             (1719.1, 2287.8)    *
-             (2287.8, 2856.5)    **
-             (2856.5, 3425.2)    
-             (3425.2, 3993.9)    
-             (3993.9, 4562.6)    
-             (4562.6, 5131.3)    
-             (5131.3, 5700.0)    *
-
-
-In this case we see even more skewed behavior. Looking at the other feature in
-this file (length) shows less skew:
-
-    $ cat ../datasets/dinosaurs.tsv | cut -f3 | histo
-    length_m, transf = (none)
-    num_blanks = 0
-                (2.07, 2.923)    *****
-               (2.923, 3.776)    ****
-               (3.776, 4.629)    *
-               (4.629, 5.482)    **
-               (5.482, 6.335)    ******
-               (6.335, 7.188)    
-               (7.188, 8.041)    ***
-               (8.041, 8.894)    *
-               (8.894, 9.747)    *
-                (9.747, 10.6)    *
-
-This gives us a good idea of the shapes of these features in isolation, as well
-as a subtle clue toward their relationship. We'll see later how another graphical
-technique makes this relationship clear.
-
-Finally here's another example that shows the average monthly CO2 concentration
+Here's an example that shows the average monthly CO2 concentration
 at the Mauna Loa observatory in Hawaii from Jan 2000 to Aug 2015:
 
     $ cat ../datasets/mauna_loa.tsv | cut -f4 | histo
@@ -232,8 +193,11 @@ at the Mauna Loa observatory in Hawaii from Jan 2000 to Aug 2015:
              (400.24, 403.94)    *********
 
 This distribution exhibits a high degree of centrality and symmetry, but
-again we'll see later that this dataset has more information that is not
+we'll see later that this dataset has more information that is not
 revealed here.
+
+Histograms are invaluable tools for looking at a distribution, but they don't
+get us very far beyond that.
 
 ### boxplot
 
@@ -289,7 +253,7 @@ effect is a function of a feature called `purifying_agent`, and depends on
 whether the agent is oxygen or something else:
 
     $ cat rayleigh.tsv | grep Air | cut -f4 | histo
-    2.31017, transf = (none)
+
     num_blanks = 0
              (2.3099, 2.3099)
                (2.3099, 2.31)
