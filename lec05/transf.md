@@ -88,9 +88,11 @@ bases simply differ by a constant scale factor, so changing the base is a
 linear transformation.
 
 Another important transformation is the square root, called `sqrt` for short.
-The `sqrt` function is monotonic and nonlinear, but it brings
-[less](https://www.google.com/search?espv=2&q=x%2C+sqrt+x%2C+log+x%2C+-1%2Fx&oq=x%2C+sqrt+x%2C+log+x%2C+-1%2Fx)
-nonlinearity than the log function.
+The `sqrt` function is monotonic and nonlinear, but it brings "less"
+nonlinearity (and will remove less skew) than the log function.
+
+This diagram illustrates the growth of each of these functions and their relative
+nonlinearity (the other transformations here are valid but less useful):
 
 <p align="center">
 <img src="../images/transfs.png">
@@ -106,10 +108,18 @@ in terms of powers of *x*. The raw data represents the first power, or *x^1*:
 | -1/2  | *-1 / sqrt x* |
 | -1    | *-1 / x* |
 
+For the sake of completeness, other less-useful transformations are included
+here as well.
+
 Smaller powers of `x` reduce skew compared to the raw expression (because these
 functions exhibit sublinear growth). Therefore our skew-removal operations will be
-carried out with transformations associated with powers less than 1. These are
+carried out with transformations that correspond to powers less than 1. These are
 the functions that "sweep the leaves from out of the corners," to use a Tukey
 quote.
 
-An important technical point 
+An important technical point arises at the origin. As you can see from the
+diagram, none of these transformations are well-defined when *x=0*. It's
+necessary to account for this in practical terms by building a small
+work-around into our transformation; namely, by adding a small constant value
+whenever *x* is 0 to prevent pathological behavior. You'll have a chance to
+try this out in the exercises.
