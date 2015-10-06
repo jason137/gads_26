@@ -34,8 +34,8 @@ certain important conditions, does not affect your conclusions.
 ## 1. properties of transformations
 
 Not all transformations are useful to us. We want to use a transformation that
-doesn't distort our conclusions, but which does give us a new perspective on
-our data.
+gives us a new perspective on our data while keeping the salient properties of
+the data intact.
 
 An example of a transformation that is not useful is the conversion
 of feet to meters. Changing units certainly doesn't distort our empirical
@@ -43,18 +43,16 @@ conclusions, but it doesn't give us a new perspective either. If the
 distribution of heights of all your friends is skewed in feet, it will be
 still be skewed in meters. This absence of effect is characteristic of
 **linear** transformations, which are composed of translations and constant
-scaling (this is embodied in the classical regression equation `y = mx + b`,
-where `b` represents a translation and `m` a constant scale factor).
+changes in scale (this is embodied in the classical regression equation
+*y = mx + b*, where *b* represents a translation and *m* a constant scale
+factor).
 
 Useful transformations will be **nonlinear**, since it is this nonlinearity
-that gives us the desired change in shape. This change in shape produces
-changes in moment-based statistics as well; the mean of a set of values is
-different than the mean of twice each value.
-
-In order to avoid making qualitative changes to the data, it's necessary to use
-transformations that are **monotonic**. This property means that the
-transformation **preserves ranks**; for a monotonic function *f* and two values
-*x* and *y*, the ordering *x < y* holds if and only if *f(x) < f(y)*.
+that gives us the desired change in shape. In order to avoid making qualitative
+changes to the data, it's necessary to use transformations that are also
+ **monotonic**. This property means that the transformation **preserves ranks**;
+for a monotonic function *f* and two values *x* and *y*, the ordering *x < y*
+holds if and only if *f(x) < f(y)*.
 
 In intuitive terms, you can think of a monotonic function as one that's
 non-decreasing, for example, the log function:
@@ -67,6 +65,10 @@ monotonic transformation preserves ranks and therefore percentiles. A corollary
 of this second condition is the fact that the transformation of the *k*th percentile
 is the *k*th percentile of the transformed values; therefore the values in the
 5NS don't need to be recalculated to be accurately transformed.
+
+Note that moment-based statistics such as the mean and standard deviation don't hold
+up to transformations of any kind; the mean of a set of values is different than the
+mean of twice each value (a linear transformation).
 
 ## 2. `log` & `sqrt`
 
