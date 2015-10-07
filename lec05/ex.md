@@ -11,32 +11,38 @@ simple as possible.
 1) Define the following terms:
 - monotonic
 - nonlinear
-- boxplot
+
+2) Imagine you're waiting on the subway platform. What do you think the
+distribution of the heights of people on the subway platform looks like? What
+about the distribution of subway waiting times looks like? Why?
+
+3) T or F
+- log(xy) = (log x) * (log y)
+- the base of the logarithmic transformation affects the shape of the distribution
+    of transformed values
+- logs convert multiplication to addition
+- the log function is "more" nonlinear than the sqrt function
 
 ### yes computers
 
-1) Create this DataFrame in Python:
+4) Create a DataFrame in Python with a numeric feature containing the values
+`[1, 2, 3, 4, 5]`. Now create another feature containing the logs of these
+values. Verify that the median of the log values is the same as the log of
+the median of the raw values.
 
-       a     log_a
-    0  1  0.000000
-    1  2  0.693147
-    2  3  1.098612
-    3  4  1.386294
-    4  5  1.609438
-
+5) Create a DataFrame in Python with a numeric feature containing the values
+`[0, 1, 2, 3, 4]`. Now create another feature containing the logs of these
+values (note that this requires you to think about how the log is calculated).
 Verify that the median of the log values is the same as the log of the median
-of the raw values.
+of the raw values. Do your results differ from question 1? Why or why not?
 
-2) Now create this DataFrame in Python:
+6) Create histograms of the features in `dinosaurs.tsv`. What can you say about
+the shape of these distributions? Apply a useful transformation to one of the
+features. What did you change?
 
-       b      log_b
-    0  0 -11.512925     # your value may differ here
-    1  1   0.000000
-    2  2   0.693147
-    3  3   1.098612
-    4  4   1.386294
-    5  5   1.609438
+7) Create a scatterplot of the raw values in `dinosaurs.tsv`. What can you say
+about this relationship? Now create a scatterplot using the transformed values
+you created in the last question. Does the relationship change?
 
-Write a function that can convert column `b` to logarithms, and verify that the
-median of the log values is the same as the log of the median of the raw
-values. How do your results differ from question 1?
+8) Create a histogram of the values in `state_hts.tsv`. Now increase the number
+of bins. Do you see any new behavior emerge?
