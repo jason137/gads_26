@@ -1,9 +1,9 @@
 # data transformations
 
 <p align="center">
-<img src="../images/glasses.jpg">
+<img src="http://www.mtv.com/crop-images/2014/06/25/BumbleBee_T3.gif">
 
-data transformations
+data transformations  
 https://github.com/jason137/gads_26/blob/master/lec05/transf.md  
 
 exercises  
