@@ -1,8 +1,8 @@
 <!-- author: Jason Dolatshahi -->
 
-# machine learning
+# concepts of machine learning
 
-## 1. problems
+## 1. problems in ML
 
 Machine learning (ML) is a subject that deals with the study of algorithms that
 learn from data. It encompasses a number of techniques, some of which are
@@ -43,7 +43,7 @@ lectures. The important distinction is summarized here:
 | supervised | making predictions |
 | unsupervised | extracting structure |
 
-## 2. solutions
+## 2. solutions in ML
 
 We've already seen that data can come in numerous forms. Most algorithms can
 work with features of different forms, but there is an important distinction
@@ -66,7 +66,7 @@ an easy way to determine which algorithm is appropriate for your learning task:
 | type of learning | categorical target | numerical target |
 | --------------- | ---- | --- |
 | supervised | classification | regression |
-| unsupervised | clustering | dim reduction |
+| unsupervised | clustering | dimensionality reduction |
 
 This doesn't tell you exactly which algorithm to use, and it certainly doesn't
 tell you how to train your model, but it does give you a first idea of what
