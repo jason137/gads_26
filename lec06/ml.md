@@ -108,6 +108,11 @@ one of the central pitfalls of machine learning, and it goes by the name of
 because it will be ineffective at making **out-of-sample** (OOS) predictions
 (predictions for records that don't appear in the **training set**).
 
+Overfitting occurs when our model fits the noise in the dataset instead of the
+signal. Note that **underfitting** can also occur when our model is not
+sophisticated enough to extract the structure from the data:
+
+<br>
 <p align="center">
 <img src="../images/overfitting.png">
 
