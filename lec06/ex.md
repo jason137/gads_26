@@ -25,5 +25,6 @@ split and output your results.
 
 Note that you can shuffle a DataFrame called `df` like this:  
 
+    import numpy as np
     new_index = np.random.permutation(df.index))   
     df = df.reindex(new_index)
