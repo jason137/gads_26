@@ -101,7 +101,7 @@ This makes the trend easier to see:
 
 Logistic regression can be seen as an extension of this simple and practical
 point of view where the bucket size shrinks to 1, and where we make class
-predictions by applying a cutoff to the model's probability estimates at 50%.
+predictions by applying a **cutoff** to the model's probability estimates at 50%.
 
 ## epilogue: glm
 
