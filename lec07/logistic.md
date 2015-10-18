@@ -53,17 +53,31 @@ Notice that it maps each real value into the unit interval [0, 1]:
 <img src="../images/logistic_curve.png">
 
 ### probability estimates
-These dependent values are all between 0 and 1, so we can interpret them as **probabilities
-of class membership**. This is illustrated by the following example.
+These dependent values are all between 0 and 1, so we can interpret them as
+**probabilities of class membership**. This is illustrated by the following
+example.
 
-Suppose we have a number of records that give the (numeric) age of an
+Suppose we have a number of records that give the age of an
 individual accompanied by a binary variable that indicates whether the
-individual has heart disease. We can visualize the relationship between these
-variables using a scatterplot:
-
+individual has heart disease:
 
 <p align="center">
-<img src="../images/logistic_scatter.png">
+<img src="../images/logistic_table1.png">
+
+Like before, we can visualize the relationship between these variables using
+a scatterplot. But becasue the independent variable (age) is real-valued while the
+dependent variable (CHD) can take only the values 0 or 1, the relationship is
+difficult to see:
+
+<p align="center">
+<img src="../images/logistic_scatter1.png">
+
+We can visualize it more easily by applying a simple transformation to the feature
+space. Namely we can bucket the ages into groups (20s, 30s, etc) and plot the
+average of *Y* inside each group to look for a trend:
+
+<p align="center">
+<img src="../images/logistic_scatter2.png">
 
 ### error term
 

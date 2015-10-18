@@ -3,7 +3,7 @@
 <p align="center">
 <img src="../images/logistic.png">
 
-logistic regression
+logistic regression  
 https://github.com/jason137/gads_26/blob/master/lec07/logistic.md  
 
 exercises  
