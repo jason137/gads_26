@@ -22,10 +22,8 @@ We can control for overfitting by applying regularization, which **explicitly
 penalizes** the model for adding complexity. The way it does this depends on our
 definition of complexity.
 
-Suppose for simplicity we're using a linear regression model (though the
-discussion holds for other models as well). In this case we have *Y = β0 + β1
-x1 + ... + βn xn + ε*, where in a minor change of notation *β0* plays the role
-that *α* played before.
+Suppose for simplicity we're using a linear regression model with *y = Σ βX*
+(though the discussion holds for other models as well).
 
 ## norms
 
@@ -56,10 +54,10 @@ combination of both the L1 and L2 norms.
 The equations above can be re-expressed in using another (Lagrangian)
 formulation as follows:
 
-    1) y = min (|| y - Σ βX ||^2 + λ ||x||)
-    2) y = min (|| y - Σ βX ||^2 + λ ||x||^2)
+    1) y = min (| y - Σ βX |^2 + λ |x|)
+    2) y = min (| y - Σ βX |^2 + λ |x|^2)
 
-The Lagrangian formulation incorporates the constraint into the optimization
+This formulation incorporates the constraint into the optimization
 problem itself; this explicitly associates complexity with a **cost** to the
 optimization program that learns the model.
 

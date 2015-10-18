@@ -27,8 +27,8 @@ for linear models. Which parts look familiar? Which parts are confusing?
 6) Have a look at the sklearn
 [api
 reference](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression)
-for logistic regression. What do each of the input parameters do? Why are their
-defaults selected as they are?
+for logistic regression. What do each of the input parameters do? Why do you
+think the defaults are selected as they are?
 
 7) Use sklearn and the data in `beer.txt` to build a logistic regression model that
 predicts the type of beer. How does your model perform? Try to improve it by
