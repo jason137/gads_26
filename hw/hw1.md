@@ -36,9 +36,3 @@ Copy your ans + terminal output and align it 4 spaces from the left. See the fir
 11) How many lines are in datasets/Capablanca.pgn? How many records?
 
 12) The pgn files in the datasets directory contain data in a format that's common for storing the results of chess games. Create (separate) frequency distributions for the first moves of each game in each of these these files. What can you conclude from your results?
-
-
-13) The file `epl.tsv` contains half-time and full-time scores for all soccer
-(football) matches in the English Premier League for the 2013-14 season. What
-is the probability of a team winning if they're ahead at half time? Does this
-probability change if the team is the home team (eg Team 1)?
