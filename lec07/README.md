@@ -1,4 +1,4 @@
-# machine learning
+# logistic regression & regularization
 
 <p align="center">
 <img src="../images/logistic.png">
