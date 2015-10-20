@@ -1,0 +1,133 @@
+1) name
+  city name (string variable)
+
+2) city
+  city identifiers (numerical), unique number for each city
+
+3) statenam
+  state name (string variable)
+
+4) state
+  state identifiers (numerical)
+
+5) censdist
+  Census state code; useful for creating region dummies
+
+6) year
+  year
+
+7) sworn
+  # of sworn police officers employed by city as of November 1
+  of year from FBI's Uniform Crime Reports
+
+8) civil
+  # of civilian police employees by city as of November 1
+  of year from FBI's Uniform Crime Reports.
+  (Sworn+civil=total police.)
+
+9) violent
+  # of reported violent crimes, from UCR.
+
+10) property
+  # of reported property crimes, from UCR.
+
+11) elecyear
+  mayoral election year in city (indicator variable)
+  Sources: Various almanacs and documents from city associations
+
+12) governor
+  gubernatorial election year in state (indicator variable)
+
+13) rincpc
+  real income per capita in state.
+  Source: Author's calculations using data from
+  Blanchard and Katz (1993) and CPI.
+
+14) econgrow
+  percent change in rincpc, computed as delta-log
+  rincpc.
+
+15) unemp
+  state unemployment rates
+  Source: Blanchard and Katz (1993).
+
+16) citypop
+  city-population estimates.
+  source: FBI Arrests master file data tape.
+
+17) term2
+  indicator variable for cities with two-year mayoral
+  terms
+
+18) term3
+  indicator variable for cities with three-year mayoral
+  terms
+
+19) term4
+  indicator variable for cities with four-year mayoral
+  terms
+
+20) a0_5
+  % of smsa population within age range 0-4.
+  Source: marketing almanac (I would have to look up
+  precise name of book I used; sorry!); interpolated
+  between decennial censuses
+
+21) a5_9
+  % of smsa population within age range 5-9.
+  Source: marketing almanac (I would have to look up
+  precise name of book I used; sorry!); interpolated
+  between decennial censuses
+
+22) a10_14
+  % of smsa population within age range 10-14.
+  Source: marketing almanac (I would have to look up
+  precise name of book I used; sorry!); interpolated
+  between decennial censuses
+
+23) a15_19
+  % of smsa population within age range 15-19.
+  Source: marketing almanac (I would have to look up
+  precise name of book I used; sorry!); interpolated
+  between decennial censuses
+
+24) a20_24
+  % of smsa population within age range 20-24.
+  Source: marketing almanac (I would have to look up
+  precise name of book I used; sorry!); interpolated
+  between decennial censuses
+
+25) a25_29
+  % of smsa population within age range 25-29.
+  Source: marketing almanac (I would have to look up
+  precise name of book I used; sorry!); interpolated
+  between decennial censuses
+
+26) citybla
+  % of city population that is black.
+  Source: Statistical Abstract; interpolated between
+  decennial censuses
+
+27) cityfemh
+  % of city population residing in female-headed households.
+  Source: Statistical Abstract; interpolated between
+  decennial censuses
+
+28) sta_educ
+  Combined state and local spending per capita on education
+  in 1992 dollars.
+  Source: Statistical Abstract.
+
+29) sta_welf
+  Combined state and local spending per capita on public welfare
+  in 1992 dollars.
+  Source: Statistical Abstract.
+
+30) price
+  Consumer Price Index
+  Source: Economic Report of the President
+
+31) termlim
+  Indicator variable equal to 1 in years in which governor
+  is a lame duck due to term limits
+  Source: computed from data from Anne Case.
