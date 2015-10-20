@@ -54,8 +54,8 @@ combination of both the L1 and L2 norms.
 The equations above can be re-expressed in using another (Lagrangian)
 formulation as follows:
 
-    1) y = min (| y - Σ βX |^2 + λ |x|)
-    2) y = min (| y - Σ βX |^2 + λ |x|^2)
+    1) y = min (| y - Σ βX |^2 + λ |β|)
+    2) y = min (| y - Σ βX |^2 + λ |β|^2)
 
 This formulation incorporates the constraint into the optimization
 problem itself; this explicitly associates complexity with a **cost** to the
