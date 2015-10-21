@@ -118,4 +118,42 @@ Bayesian inference. You can think of the likelihood function as taking in data
 points one at a time and **updating** the estimate of the posterior distribution
 as it does so.
 
+<p align="center">
+<img src="../images/bayes2.png">
+
 ## naive Bayes classification
+
+We want to use Bayes' theorem for classification, and though the stage is
+nearly set there's one major obstacle still to overcome. Imagine a
+classification problem with a number of features. The engine of Bayesian
+inference, the likelihood function, is the joint distribution of all these
+features conditional on the classes: *P(A|B) = P(a1, a2, a3, ..., an | B)*.
+This joint distribution is too complex to be tractable in practice; we'll never
+have enough data to get sufficient information about each corner of the very
+high-dimensional space it lives in.
+
+However we can make a simplifying assumption that gives us access to the
+estimation problem without sacrificing much in terms of theoretical
+justification.
+
+In particular, we can assume that the events *a_i* are **conditionally
+independent** from each other. Then instead of needing information about the
+entire high-dimensional space occupied by the likelihood function in order to
+do computations, we can treat each dimension on its own and presume that the
+higher-order effects we're missing won't hurt us too much. It turns out that
+this works pretty well in practice.
+
+Our assumption is implemented by decomposing the likelihood function from a
+complicated joint density function into a product of independent conditional
+densities. This is an example of incurring a little bias while greatly reducing
+variance; by forcing conditional independence on our model, we transform the
+feature space (where the likelihood function lives) from an *n*-dimensional space
+to *n* much more manageable 1-dimensional spaces.
+
+<p align="center">
+<img src="../images/naive.png">
+
+This is the "naive" assumption that makes naive Bayes workable. The model
+produces a non-linear decision boundary in general, but you can show that in 
+certain special circumstances it's equivalent to logistic regression, and
+therefore linear.
