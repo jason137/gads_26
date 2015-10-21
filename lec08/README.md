@@ -1,7 +1,7 @@
 # naive bayes classification
 
 <p align="center">
-<img src="../images/logistic.png">
+<img src="../images/tbayes.png">
 
 naive bayes  
 https://github.com/jason137/gads_26/blob/master/lec08/nbayes.md  

@@ -1,0 +1,15 @@
+workclass: categorical
+fnlwgt: continuous
+education: categorical
+education-num: continuous
+marital-status: categorical
+occupation: categorical
+relationship: categorical
+race: categorical
+sex: categorical
+capital-gain: continuous
+capital-loss: continuous
+hours-per-week: continuous
+native-country: categorical
+
+workclass,fnlwgt,education,education-num,marital-status,occupation,relationship,race,sex,capital-gain,capital-loss,hours-per-week,native-country
