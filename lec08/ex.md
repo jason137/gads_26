@@ -62,3 +62,6 @@ these. Take a look at the text classification
 [example](http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
 in the docs and apply these steps to build a naive Bayes text classifier either
 using the built-in dataset in the example, or the dataset in `email.csv`.
+
+
+[Solution](https://github.com/jason137/gads_26/blob/master/example_notebooks/Ex08_TextProcessing_NaiveBayes.ipynb)
