@@ -10,6 +10,7 @@ N_FOLDS = 10
 
 def main(input_file=INPUT_FILE):
 
+    # count_vect = CountVectorizer(stop_words='english')
     count_vect = CountVectorizer()
 
     data = pd.read_csv(input_file, sep=',', names=['label', 'text'])
