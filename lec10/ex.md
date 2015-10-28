@@ -18,8 +18,8 @@ simple as possible.
 - decision stump
 - boosting
 
-2) Why might logistic regression model not make a good base classifier for an
-ensemble?
+2) Why do decision trees make good base classifiers? Why might logistic
+regression models not make good base classifiers?
 
 3) How do bagging, boosting, and random forests address the statistical &
 mathematical conceptual problems in classification?
@@ -28,4 +28,7 @@ mathematical conceptual problems in classification?
 
 ### yes computers
 
-5) 
+5) Compare the performance of a single decision tree, a random forest, and a
+boosted classifer (like `GradientBoostingClassifier`) on the multi-class
+problem using the data in `abalone.csv`. What can you say about the relative
+performance of each? Does hyperparameter tuning change your results?

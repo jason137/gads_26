@@ -190,14 +190,3 @@ true decision boundary) need not live in the space:
 
 <p align="center">
 <img src="../images/ens_boundary.png">
-
-## Q’s
-- why might LR not make a good base clf for an ensemble? (low variance)
-- how do bagging/boosting/rf address the stat & math problems?
-
-- why does low bias correspond to high variance?
-—> high V: explore more of sample space, possible overfitting
-—> high B: more systemic error, but more control, possible underfitting
-
-- which of these do you think could be parallelized? which do you think could
-  not?
