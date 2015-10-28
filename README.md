@@ -3,6 +3,7 @@
 <p align="center">
 <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">
 <img src="images/drew.png">
+</a>
 
 You're seeing this file here because it's the README for the base directory of this
 [repo](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1).
