@@ -1,4 +1,4 @@
-# machine learning
+# concepts of machine learning
 
 <p align="center">
 <img src="../images/robot.jpg">

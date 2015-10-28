@@ -42,4 +42,5 @@ structures?
 - computational complexity
 
 6) How would you characterize the accuracy for each of targets below?  
-<img src="dartboards.png" align="middle", width=300>  
+<p align="center">
+<img src="../images/dartboards.png">
