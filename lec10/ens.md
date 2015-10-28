@@ -161,7 +161,7 @@ trees, each of which are learned using heuristic techniques, but which taken
 together are more powerful than the sum of their parts.
 
 <p align="center">
-<img src="../ens_error.png">
+<img src="../images/ens_error.png">
 
 ### mathematical problem
 
