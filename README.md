@@ -31,6 +31,14 @@ We'll use it to keep track of useful links and information.
 [lec 10]
 (https://github.com/jason137/gads_26/tree/master/lec10) - ensemble classifiers  
 
+## Homework Schedule 
+
+HW | Topics | Due  
+--- | --- | ---  
+2 | Classification & Cross Validation | 11/11 
+FP1 | First Draft of Final Project - Data cleanup + EDA | 11/25 
+FP2 | Final Project | 12/16 
+
 ## datasets  
 There are a handful of (small) datasets in this repo that you can use to
 practice the techniques we discuss in class. Don't hesitate to seek out & use
