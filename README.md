@@ -36,8 +36,9 @@ We'll use it to keep track of useful links and information.
 HW | Topics | Due  
 --- | --- | ---  
 2 | Classification & Cross Validation | 11/11 
-FP1 | First Draft of Final Project - Data cleanup + EDA | 11/25 
-FP2 | Final Project | 12/16 
+FP1 | Elevator Pitch | 11/18 
+FP2 | First Draft of Final Project - Data cleanup + EDA | 11/25 
+FP3 | Final Project | 12/16 
 
 ## datasets  
 There are a handful of (small) datasets in this repo that you can use to
