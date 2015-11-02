@@ -18,9 +18,9 @@ Construct, sign, and open a twitter request
 using the hard-coded credentials above.
 '''
 
-def retrieve_tweets(topic, 
-                    url="https://stream.twitter.com/1/statuses/filter.json", 
-                    method="GET", ):
+def retrieve_tweets(topic):
+                    
+                    
     """
 
     Params:
