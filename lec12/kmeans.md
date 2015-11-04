@@ -149,7 +149,11 @@ centroids, so high values correspond to good clustering outcomes.
 <img src="../images/cluster_validation.png">
 
 It's possible to combine these metrics into a single number called the
-**silhouette coefficient**:
+**silhouette coefficient**. The silhouette coefficient for a given record is a
+function of two intermediate variables: *a*, the mean distance between the
+sample and other members of its own cluster, and *b*, the mean distance between the
+sample and members of the next nearest cluster. Using these definitions, the
+silhouette coefficient for a given record is given by:
 
 <p align="center">
 <img src="../images/cluster_scc.png">

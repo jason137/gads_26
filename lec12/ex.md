@@ -25,5 +25,6 @@ in clustering?
 
 4) Use sklearn to perform k-means clustering on the data in `iris.csv`. Perform
 model selection (eg, cross-validate the value of k) using the average
-silhouette coefficient across points. What conclusions can you draw? What
-preprocessing steps do you think may affect your results?
+silhouette coefficient across points (you can use
+`sklearn.metrics.silhouette_score` to do this easily). What conclusions can you
+draw? What preprocessing steps do you think may affect your results?
