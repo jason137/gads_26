@@ -30,15 +30,19 @@ We'll use it to keep track of useful links and information.
 (https://github.com/jason137/gads_26/tree/master/lec09) - decision tree classification  
 [lec 10]
 (https://github.com/jason137/gads_26/tree/master/lec10) - ensemble classifiers  
+[lec 11]
+(https://github.com/jason137/gads_26/tree/master/lec11) - project examples  
+[lec 12]
+(https://github.com/jason137/gads_26/tree/master/lec12) - k-means clustering
 
-## Homework Schedule 
+## homework schedule 
 
-HW | Topics | Due  
+assignment | topics | due  
 --- | --- | ---  
-2 | Classification & Cross Validation | 11/11 
-FP1 | Elevator Pitch | 11/18 
-FP2 | First Draft of Final Project - Data cleanup + EDA | 11/25 
-FP3 | Final Project | 12/16 
+hw 2 | Classification & Cross Validation | 11/11 
+project 1 | Elevator Pitch | 11/18 
+project 2 | First Draft of Final Project - Data cleanup + EDA | 11/25 
+project 3 | Final Project | 12/16 
 
 ## datasets  
 There are a handful of (small) datasets in this repo that you can use to
@@ -53,8 +57,7 @@ https://github.com/jason137/gads_26/blob/master/general_references.md
 
 ## todo
 - ROC (1/2)
-- clustering
-- pca?
 - sql?
 - recsys (1/2)?
 - map-reduce (1/2)?
+- pca?

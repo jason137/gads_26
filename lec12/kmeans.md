@@ -115,11 +115,9 @@ standardized before application of a clustering technique.
 The result of the k-means algorithm is a mapping of points to clusters, or
 equivalently a partition of the set of points. Partitions such as these have
 been studied independently of clustering algorithms, and frequently go by the
-name **Voronoi diagrams**. Additionally, note that k-means tends to create
-clusters of equal size.
-
-<p align="center">
-<img src="../images/voronoi.png">
+name **Voronoi diagrams** (the image on the README for this lecture is a
+Voronoi diagram). Additionally, note that k-means tends to create clusters
+of equal size.
 
 ## cluster validation
 
@@ -135,16 +133,17 @@ measures the effectiveness of the clustering scheme within a given cluster:
 <p align="center">
 <img src="../images/cohesion.png">
 
+The cohesion of a cluster is given by the sum of the within-cluster distances,
+so low values correspond to good clustering outcomes.
+
 Another useful metric is the **separation**, which measures the effectiveness
 of the clustering scheme between clusters:
 
 <p align="center">
 <img src="../images/separation.png">
 
-The cohesion of a cluster is given by the sum of the within-cluster distances,
-so low values correspond to good clustering outcomes. Conversely, the separation
-between two clusters is given by the distance between their centroids, so high values
-correspond to good clustering outcomes.
+The separation between two clusters is given by the distance between their
+centroids, so high values correspond to good clustering outcomes.
 
 <p align="center">
 <img src="../images/cluster_validation.png">
@@ -168,4 +167,4 @@ This plot shows how the average silhouette coefficient can be used to select
 the optimal value of *k*:
 
 <p align="center">
-<img src="../images/cluster_validation.png">
+<img src="../images/cluster_model_selection.png">
