@@ -167,4 +167,4 @@ This plot shows how the average silhouette coefficient can be used to select
 the optimal value of *k*:
 
 <p align="center">
-<img src="../images/cluster_model_selection.png">
+<img src="../images/clust_model_selection.png">
