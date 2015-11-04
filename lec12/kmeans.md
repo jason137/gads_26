@@ -85,7 +85,7 @@ stores pairwise distances between all records, and therefore is fully
 determined by the function we use to calculate these distances.
 
 This important function is called the **distance function** (or **similarity
-function), or more formally a **metric** on the feature space. The metric gives
+function**), or more formally a **metric** on the feature space. The metric gives
 us a quantitative means to compare two records together. Certain mathematical
 properties that metric functions must satisfy ensure that these comparisons are
 rigorous and internally consistent.
@@ -154,10 +154,11 @@ It's possible to combine these metrics into a single number called the
 <p align="center">
 <img src="../images/cluster_scc.png">
 
-The silhouette coefficient takes values between -1 and 1. The ideal case of
-high separation and low cohesion corresponds to a value close to 1, while
-negative values of the silhouette coefficient indicates that we have
-overlapping clusters.
+The silhouette coefficient takes values between -1 and 1. The "happy case" of
+high separation and low cohesion corresponds to a value close to 1. Values
+close to zero indicate overlapping cluster boundaries, and negative
+values indicate that something has gone wrong (eg, a record has been assigned
+to one cluster, but it is more similar to another cluster).
 
 Silhouette coefficients are defined on a per-record basis, but they can be
 averaged within clusters or across clusters to create higher-level assessments
