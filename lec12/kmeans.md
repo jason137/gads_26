@@ -17,7 +17,7 @@ to make predictions, but rather to enhance our understanding of the data in a
 model-driven way. As a result these techniques are somewhat exploratory, and
 model evaluation is less rigorous than in supervised learning.
 
-## clustering
+## k-means clustering
 
 An unsupervised problem with a categorical target variable puts us in the realm
 of **clustering**.
@@ -32,8 +32,6 @@ the number of groups we're looking for as a hyperparameter, while others do not.
 We can define a cluster as a group of **similar** data points, and it turns out
 that most of the work in performing a clustering task has to do with specifying
 what we mean by "similar".
-
-## k-means clustering
 
 **K-means clustering** is a simple, popular, and scalable clustering technique
 for numerical data. The algorithm takes an integer *k* as its input, which
