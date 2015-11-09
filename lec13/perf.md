@@ -20,9 +20,11 @@ need to evaluate and compare models.
 There are two ways for a model to make an inaccurate prediction in binary
 classification: either it assigns a positive label to a record
 that should be labelled negative (**false positive**), or it assigns a negative
-label to a record that should be labelled positive (**false negative**).
-There are also two ways to make accurate predictions: **true positives** and
-**true negatives** are defined analogously.
+label to a record that should be labelled positive (**false negative**). These
+are sometimes referred to as **type I** and **type II** errors.
+
+Note that there are also two ways to make accurate predictions; **true
+positives** and **true negatives** are defined analogously.
 
 Just as class imbalance is a common phenomenon in practical machine learning,
 so is the presence of inequal costs associated with either type of inaccuracy.
@@ -58,6 +60,9 @@ incorrectly classified to all negative records, or *FP / (FP + TN)*. Keep in
 mind that a false positive is a record that we identify as positive, but is
 actually negative.
 
+Note that both of these calculations take place in a single column of the
+confusion matrix.
+
 ## points in ROC space
 
 We can evaluate and compare classifiers by plotting their TP and FP rates in a
@@ -69,7 +74,8 @@ called **ROC space**:
 
 Each classifier produces a single confusion matrix, a single tradeoff 
 between true positives and false positives, and therefore a single point in ROC
-space.
+space. ROC stands for "receiver operating characteristic", a vestige of its
+origins in signal detection theory.
 
 Note that the point *(0, 0)* corresponds to a classifier that makes no
 positive predictions; its false positive rate is zero, but so is its true
