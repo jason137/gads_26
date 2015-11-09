@@ -2,8 +2,6 @@
 
 # evaluating model performance
 
-## subtleties in evaluating classifiers
-
 Consider a binary classification task (eg, a supervised learning task with two
 possible outcomes). We can encode the binary target variable as an integer, so
 1 corresponds to the positive outcome, and 0 to the negative outcome. If our
@@ -142,19 +140,19 @@ The AUC is an average of an ROC curve that's meant to give a 1-dimensional view
 of expected performance by averaging over all possible thresholds. It can be
 interpreted as the probability that the classifier ranks a randomly chosen
 positive record higher than a randomly chosen negative record. Note that AUC
-gives a useful way to compare models using cross-validation, but implementing a
-model for prediction in practice still requires a choice of threshold.
+gives a useful way to compare models using [cross-validation]
+(http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html),
+but implementing a model for prediction still requires an explicit choice of
+threshold.
 
-## precision vs recall
+## precision & recall
 
-The concepts of **precision** and **recall** come from the field of information
-retrieval, and their formal definitions are sometimes still given in this
-language (involving selected documents, relevant documents, etc). These metrics
-are related to (and frequently confused with) the concepts of tpr and fpr, and
-like their relatives they too can be derived from the confusion matrix.
+The concepts of **precision** and **recall** are closely related to (and frequently
+confused with) the concepts of ROC analysis, and like their relatives they too can be
+derived from the confusion matrix.
 
-It helps to use the information retrieval framework to think about these
-concepts, which the following diagram illustrates:
+It helps to think about these concepts using the language of information
+retrieval, the field where they were first used:
 
 <p align="center">
 <img src="../images/prec_recall.png">
@@ -164,6 +162,28 @@ either correct or incorrect. Using the notation in the confusion matrix, the
 set of all predictions (the **selected** set) is given by *tp + fp*.
 
 The data our classifier evaluates contains a proportion of positive records,
-some of which we identify and some of which we miss. Using the notation in the
-confusion matrix, this **target** set (sometimes called the relevant set) is
+some of which we identify and some of which we miss. Again, in the notation in
+the confusion matrix, this **target** set (sometimes called the relevant set) is
 given by *tp + fn*.
+
+The **precision** of a classifier is the ratio of true positives to the
+selected set. This ratio measures the relationship between correct positive 
+predictions and all predictions; more specifically, it gives the conditional
+probability of a positive record given positive prediction. If we denote actual
+positive by `y = 1` and a predicted positive by `y' = 1`, then the precision at
+a threshold `t` can be written as
+
+    p(t) = P(y = 1 | y' = 1)
+
+The **recall** of a classifier is the ratio of true positives to the target
+set. This ratio measures the relationship between correct positive predictions
+and all positive records; more specifically, it gives the conditional
+probability of positive prediction given a positive record. Using the same
+notation as above, we can write the recall at a threshold `t` as
+
+    r(t) = P(y' = 1 | y = 1)
+
+As in ROC analysis, precision and recall can be combined into a scalar value
+called **average precision** for use in cross-validation. Average precision is
+sensitive to class imbalance, and (as the name implies) penalizes lack of
+precision more heavily than ROC AUC does.

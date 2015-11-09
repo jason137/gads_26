@@ -1,7 +1,7 @@
 <!-- author: Jason Dolatshahi -->
 
-# lec 12 exercises
-## k-means clustering
+# lec 13 exercises
+## model evaluation
 
 Complete these exercises in groups of 2 or 3. Try to make your responses as
 simple as possible.
@@ -9,24 +9,25 @@ simple as possible.
 ### no computers
 
 1) Define the following terms:
-- separation
-- cohesion/inertia
-- cluster
-- unsupervised learning
-- centroid
-- silhouette coefficient
+- recall
+- AUC
+- ROC space
+- false positive rate
+- precision
+- confusion matrix
+- true positive rate
 
-2) What's the difference between supervised and unsupervised learning?
+2) Denote a positive record by `y = 1` and a positive prediction by `y' = 1`.
+We can write the precision and recall at a threshold `t` as:
 
-3) What role does the distance (or equivalently, similarity) function play
-in clustering?
+    p(t) = Pr(y = 1 | y' = 1)
+    r(t) = Pr(y' = 1 | y = 1)
 
-4) How can you determine the right value to use for *k*?
+What mathematical relationship do you think these quantities share?
 
-### yes computers
+3) How can ROC analysis be incorporated into a cross-validated model selection
+process? What remains to be done in order to make out-of-sample predictions?
 
-5) Use sklearn to perform k-means clustering on the data in `iris.csv`. Perform
-model selection (eg, cross-validate the value of k) using the average
-silhouette coefficient across points (you can use
-`sklearn.metrics.silhouette_score` to do this easily). What conclusions can you
-draw? What preprocessing steps might affect your results?
+4) Try to think of some examples of cases where false positives are more costly than
+false negatives. Now try think of some examples of cases where the opposite is
+true.

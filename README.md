@@ -34,6 +34,8 @@ We'll use it to keep track of useful links and information.
 (https://github.com/jason137/gads_26/tree/master/lec11) - project examples  
 [lec 12]
 (https://github.com/jason137/gads_26/tree/master/lec12) - k-means clustering
+[lec 13]
+(https://github.com/jason137/gads_26/tree/master/lec13) - ROC analysis  
 
 ## homework schedule 
 
@@ -56,7 +58,6 @@ https://github.com/jason137/gads_26/blob/master/anaconda.md
 https://github.com/jason137/gads_26/blob/master/general_references.md
 
 ## todo
-- ROC (1/2)
 - sql?
 - recsys (1/2)?
 - map-reduce (1/2)?

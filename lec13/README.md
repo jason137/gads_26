@@ -1,7 +1,7 @@
 # evaluating model performance
 
 <p align="center">
-<img src="../images/voronoi.png">
+<img src="../images/roc_curve.png">
 
 evaluating model performance  
 https://github.com/jason137/gads_26/blob/master/lec13/perf.md  
