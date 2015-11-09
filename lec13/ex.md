@@ -38,4 +38,5 @@ true.
 5) Use the data in `abalone.csv` and build a classifier to perform the binary
 task of predicting whether the number of rings is 23 or not. How does your
 model perform using 0/1 loss (accuracy) as the performance metric? How does it
-perform using AUC? What can you conclude about your results?
+perform using AUC? Create a confusion matrix to organize your model's
+performance. What can you conclude?
