@@ -56,7 +56,7 @@ positive records, or *tp / (tp + fn)*. Keep in mind that a false negative is a
 record that we identify as negative, but is actually positive.
 
 Similarly the **false positive rate** is given by the ratio of negatives
-incorrectly classified to all negative records, or *fp / (tp + fp)*. Keep in
+incorrectly classified to all negative records, or *fp / (fp + tn)*. Keep in
 mind that a false positive is a record that we identify as positive, but is
 actually negative.
 
@@ -101,14 +101,25 @@ their true positive rates and false positive rates are both high.
 
 The picture of classification we've been using so far, where a classifier
 corresponds to a single point in ROC space, is accurate if the only thing our
-classifier can do is predict a label. More generally, if the model predicts a
-score or a ranking for a record, then it can be combined with a choice of
-**threshold** to make a binary classifier (recall that this is how logistic
-regression works). In this case each threshold value produces a point in ROC
-space, and so by varying the threshold we trace out an **ROC curve**:
+classifier can do is predict a label. More generally, a classification model
+predicts a probability or a score for a record that can be combined with a
+choice of **threshold** to make a binary classifier (recall that this is how
+logistic regression works). In this case each threshold value produces a point
+in ROC space, and so by varying the threshold we trace out an **ROC curve**:
 
 <p align="center">
 <img src="../images/roc_curve.png">
+
+High thresholds correspond to classifiers that require strong evidence for
+positive prediction; these occur in the upper-right corner of ROC space as
+described above. Similarly, low thresholds correspond to classifiers that
+require little evidence for positive prediction, and these occur in the
+bottom-left corner of ROC space.
+
+Besides allowing us to account separately for tpr and fpr, ROC curves also have
+the property that they are insensitive to the class distribution, meaning class
+imbalance does not affect the analysis. The class distribution is contained in
+the confusion matrix as the ratio of columns 
 
 - roc insensitive to class distr
 - auc
