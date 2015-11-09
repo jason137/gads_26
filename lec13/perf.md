@@ -49,18 +49,18 @@ Correct predictions occur on the diagonal of the matrix, while the off-diagonal
 entries correspond to incorrect predictions.
 
 A number of useful metrics can be simply derived from the confusion matrix. The
-**true positive rate** is given by the ratio of true positives to all
-positive records, or *tp / (tp + fn)*. Keep in mind that a false negative is a
+**true positive rate** (TPR) is given by the ratio of true positives to all
+positive records, or *TP / (TP + FN)*. Keep in mind that a false negative is a
 record that we identify as negative, but is actually positive.
 
-Similarly the **false positive rate** is given by the ratio of negatives
-incorrectly classified to all negative records, or *fp / (fp + tn)*. Keep in
+Similarly the **false positive rate** (FPR) is given by the ratio of negatives
+incorrectly classified to all negative records, or *FP / (FP + TN)*. Keep in
 mind that a false positive is a record that we identify as positive, but is
 actually negative.
 
 ## points in ROC space
 
-We can evaluate and compare classifiers by plotting their tp and fp rates in a
+We can evaluate and compare classifiers by plotting their TP and FP rates in a
 two dimensional plot. The two-dimensional space that this plot depicts is
 called **ROC space**:
 
@@ -76,7 +76,7 @@ positive predictions; its false positive rate is zero, but so is its true
 positive rate. Similarly, the point *(1, 1)* corresponds to a classifier that
 makes no negative predictions; its true positive rate is 100%, but so is its
 false positive rate. The diagonal line that connects these points corresponds
-to the region of ROC space where *tpr = fpr*; this is the case of random
+to the region of ROC space where *TPR = FPR*; this is the case of random
 classification, where the model performs no better (or worse) than a coin toss.
 
 The point (0, 1) corresponds to perfect prediction. This is where we'd like our
@@ -125,7 +125,7 @@ distribution cancel each other.
 
 ## area under the ROC curve
 
-ROC curves are useful as graphical representations of tpr/fpr tradeoff, but in
+ROC curves are useful as graphical representations of TPR/FPR tradeoff, but in
 order to evaluate models in practice we frequently want to represent expected
 performance as a scalar value, eg one that can be produced and compared as the
 output of a cross-validation routine.
@@ -159,12 +159,12 @@ retrieval, the field where they were first used:
 
 Our classifier creates a mapping from records to labels, and these labels are
 either correct or incorrect. Using the notation in the confusion matrix, the
-set of all predictions (the **selected** set) is given by *tp + fp*.
+set of all predictions (the **selected** set) is given by *TP + FP*.
 
 The data our classifier evaluates contains a proportion of positive records,
 some of which we identify and some of which we miss. Again, in the notation in
 the confusion matrix, this **target** set (sometimes called the relevant set) is
-given by *tp + fn*.
+given by *TP + FN*.
 
 The **precision** of a classifier is the ratio of true positives to the
 selected set. This ratio measures the relationship between correct positive 
