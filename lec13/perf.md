@@ -116,18 +116,45 @@ described above. Similarly, low thresholds correspond to classifiers that
 require little evidence for positive prediction, and these occur in the
 bottom-left corner of ROC space.
 
-Besides allowing us to account separately for tpr and fpr, ROC curves also have
-the property that they are insensitive to the class distribution, meaning class
-imbalance does not affect the analysis. The class distribution is contained in
-the confusion matrix as the ratio of columns 
+The main strength of ROC curves is their ability to graphically depict the tradeoff
+between true positives and false positives. In addition to this, ROC curves
+also have the property that they are invariant to changes in the class
+distribution. As a result, class imbalance does not affect ROC analysis. This
+can be seen from the fact that the class distribution is encoded in the ratio
+of the columns in the confusion matrix (actual positives / actual negatives),
+and ROC analysis uses only within-column ratios, so any changes in class
+distribution cancel each other.
 
-- roc insensitive to class distr
-- auc
-- can be extended to multi-class case
+## area under the ROC curve
+
+ROC curves are useful as graphical representations of tpr/fpr tradeoff, but in
+order to evaluate models in practice we frequently want to represent expected
+performance as a scalar value, eg one that can be produced and compared as the
+output of a cross-validation routine.
+
+We can use the area under the ROC curve (frequently called the **AUC**) to
+achieve this. Since the AUC measures a fraction of the unit square, it will
+always be between 0 and 1. And since we expect valid ROC curves to occur in
+only half of this region, we similarly expect valid AUC values to range from
+0.5 to 1.
+
+The AUC is an average of an ROC curve that's meant to give a 1-dimensional view
+of expected performance by averaging over all possible thresholds. It can be
+interpreted as the probability that the classifier ranks a randomly chosen
+positive record higher than a randomly chosen negative record. Note that AUC
+gives a useful way to compare models using cross-validation, but implementing a
+model for prediction in practice still requires a choice of threshold.
 
 ## precision vs recall
 
-The intuitive meaning of these terms can be seen in the following diagram:
+The concepts of **precision** and **recall** come from the field of information
+retrieval, and their formal definitions are sometimes still given in this
+language (involving selected documents, relevant documents, etc). These metrics
+are related to (and frequently confused with) the concepts of tpr and fpr, and
+like their relatives they too can be derived from the confusion matrix.
+
+It helps to use the information retrieval framework to think about these
+concepts, which the following diagram illustrates:
 
 <p align="center">
 <img src="../images/prec_recall.png">
@@ -138,5 +165,5 @@ set of all predictions (the **selected** set) is given by *tp + fp*.
 
 The data our classifier evaluates contains a proportion of positive records,
 some of which we identify and some of which we miss. Using the notation in the
-confusion matrix, this **target** set is given by *tp + fn*.
-
+confusion matrix, this **target** set (sometimes called the relevant set) is
+given by *tp + fn*.
