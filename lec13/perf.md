@@ -148,8 +148,8 @@ interpreted as the probability that the classifier ranks a randomly chosen
 positive record higher than a randomly chosen negative record. Note that AUC
 gives a useful way to compare models using [cross-validation]
 (http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html),
-but implementing a model for prediction still requires an explicit choice of
-threshold.
+but implementing a model for prediction (while targeting a specific point on
+the ROC curve) still requires an explicit choice of threshold.
 
 ## precision & recall
 
