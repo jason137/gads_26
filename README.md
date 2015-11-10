@@ -48,8 +48,10 @@ project 3 | Final Project | 12/16
 
 ## submission format 
 
-[gads-26][hw2] <student-name>
-email to arisha84@gmail.com and zunayed@gmail.com
+Email your solution to arisha84@gmail.com and zunayed@gmail.com with subject:
+
+[gads-26][hw2] student-name
+
 
 ## datasets  
 There are a handful of (small) datasets in this repo that you can use to
