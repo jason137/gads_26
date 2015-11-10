@@ -115,10 +115,10 @@ in ROC space, and so by varying the threshold we trace out an **ROC curve**:
 <img src="../images/roc_curve.png">
 
 High thresholds correspond to classifiers that require strong evidence for
-positive prediction; these occur in the upper-right corner of ROC space as
+positive prediction; these occur in the lower-left corner of ROC space as
 described above. Similarly, low thresholds correspond to classifiers that
 require little evidence for positive prediction, and these occur in the
-bottom-left corner of ROC space.
+upper-right corner of ROC space.
 
 The main strength of ROC curves is their ability to graphically depict the tradeoff
 between true positives and false positives. In addition to this, ROC curves
