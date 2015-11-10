@@ -33,9 +33,9 @@ We'll use it to keep track of useful links and information.
 [lec 11]
 (https://github.com/jason137/gads_26/tree/master/lec11) - project examples  
 [lec 12]
-(https://github.com/jason137/gads_26/tree/master/lec12) - k-means clustering
+(https://github.com/jason137/gads_26/tree/master/lec12) - k-means clustering  
 [lec 13]
-(https://github.com/jason137/gads_26/tree/master/lec13) - ROC analysis  
+(https://github.com/jason137/gads_26/tree/master/lec13) - evaluating model performance
 
 ## homework schedule 
 
