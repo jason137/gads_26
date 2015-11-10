@@ -43,7 +43,7 @@ assignment | topics | due
 --- | --- | ---  
 hw 2 | Classification & Cross Validation | 11/11 
 project 1 | Elevator Pitch | 11/18 
-project 2 | First Draft of Final Project - Data cleanup + EDA | 11/25 
+project 2 | First Draft of Final Project - Data cleanup + EDA | 11/30 
 project 3 | Final Project | 12/16 
 
 ## datasets  
