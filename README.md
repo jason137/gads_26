@@ -46,6 +46,11 @@ project 1 | Elevator Pitch | 11/18
 project 2 | First Draft of Final Project - Data cleanup + EDA | 11/30 
 project 3 | Final Project | 12/16 
 
+## submission format 
+
+[gads-26][hw2] <student-name>
+email to arisha84@gmail.com and zunayed@gmail.com
+
 ## datasets  
 There are a handful of (small) datasets in this repo that you can use to
 practice the techniques we discuss in class. Don't hesitate to seek out & use
