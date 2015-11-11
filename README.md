@@ -14,7 +14,7 @@ We'll use it to keep track of useful links and information.
 event | subject | date  
 --- | --- | ---  
 hw 2 due | Classification & Cross Validation | 11/11 
-guest speaker | Melinda Han-Williams, Lead Data Scientist at Dstillery | 11/16
+guest speaker | Melinda Han Williams, Lead Data Scientist at Dstillery | 11/16
 guest speaker | Patrick McNamara, Data Scientist at Oscar Insurance | 11/18
 project deadline 1 | Elevator Pitch | 11/18 
 project deadline 2 | First Draft of Final Project - Data cleanup + EDA | 11/30 
