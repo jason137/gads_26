@@ -9,6 +9,17 @@ You're seeing this file here because it's the README for the base directory of t
 [repo](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1).
 We'll use it to keep track of useful links and information.
 
+## important dates
+
+event | subject | date  
+--- | --- | ---  
+hw 2 due | Classification & Cross Validation | 11/11 
+guest speaker | Melinda Han-Williams, Lead Data Scientist at Dstillery | 11/16
+guest speaker | Patrick McNamara, Data Scientist at Oscar Insurance | 11/18
+project deadline 1 | Elevator Pitch | 11/18 
+project deadline 2 | First Draft of Final Project - Data cleanup + EDA | 11/30 
+project deadline 3 | Final Project | 12/16 
+
 ## syllabus  
 [lec 1]
 (https://github.com/jason137/gads_26/tree/master/lec01) - intro & setup  
@@ -36,15 +47,6 @@ We'll use it to keep track of useful links and information.
 (https://github.com/jason137/gads_26/tree/master/lec12) - k-means clustering  
 [lec 13]
 (https://github.com/jason137/gads_26/tree/master/lec13) - evaluating model performance
-
-## homework schedule 
-
-assignment | topics | due  
---- | --- | ---  
-hw 2 | Classification & Cross Validation | 11/11 
-project 1 | Elevator Pitch | 11/18 
-project 2 | First Draft of Final Project - Data cleanup + EDA | 11/30 
-project 3 | Final Project | 12/16 
 
 ## submission format 
 
