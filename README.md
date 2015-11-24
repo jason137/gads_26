@@ -9,6 +9,17 @@ You're seeing this file here because it's the README for the base directory of t
 [repo](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1).
 We'll use it to keep track of useful links and information.
 
+## project questions
+
+These are meant to keep you on the right track. Keep these in mind as you work
+on your project. At a minimum, you should convince yourself that you have clear
+and succinct answers to these questions.
+
+- what **problem** am I trying to solve?  
+- where will the **data** come from?  
+- what exploratory/feature engineering/modeling **steps** will be useful?  
+- how will I evaluate my model's **performance**?
+
 ## important dates
 
 event | subject | date  
