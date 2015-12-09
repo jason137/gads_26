@@ -1,4 +1,6 @@
 
+# Amazon Machine Learning
+
 ## AWS
 Amazon Web Services (AWS) allows you to easily launch computing resources in the cloud. 
 It provides many services to handle storage (EBS or S3) and computing (EC2 or EMR). 
@@ -8,7 +10,7 @@ machines than our local computers and we can launch one large machine or many ma
 AWS also overs a simpler UI to write MapReduce code for Hadoop through their EMR offering. 
 This allows you to not have to maintain a cluster, but just submit a task to an existing cluster.
 
-## Amazon Machine Learning
+
 
 Amazon Machine Learning makes it easy for developers of all skill levels to use machine learning (ML) technology.
 Amazon Machine Learning is a managed service for building ML models and generating predictions that enable
