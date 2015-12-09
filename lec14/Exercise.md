@@ -24,4 +24,4 @@
   aws_secret_access_key = YOUR_SECRET_ACCESS_KEY  
   
 - pip install boto3
-- Download and run ml_sample.py, try to add new field to the Record
+- Download and run ml_sample.py, try to add new fields to the Record
