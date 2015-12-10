@@ -1,3 +1,4 @@
+https://console.aws.amazon.com/machinelearning/home?region=us-east-1#/
 ## Exercise
 1) Follow the steps we saw in class to create a ML model and evaluation:  
 - In AWS console, click on AmazonML and click on “get started” 
