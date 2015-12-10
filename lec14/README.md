@@ -30,7 +30,7 @@ programming language execution environment, database, web server etc. Examples: 
 Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratos.
 
 ### SaaS (Software as a Service) 
-This model you are provided with access to application softwares often referred to as on-demand softwares.
+In this model you are provided with access to application softwares often referred to as on-demand softwares.
 You don't have to worry about the installation, setup and running of the application. 
 Service provider will do that for you. You just have to pay and use it through some client.
 Examples: Google Apps, Microsoft Office 365.
