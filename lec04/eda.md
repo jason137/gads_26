@@ -134,7 +134,7 @@ crunching faculties of our brain to the visual cortex where images and patterns
 are recognized. The huge perceptual benefits this gives us are difficult to
 overstate.
 
-The quality of a graphical summaries tends to increase with its simplicity. A
+The quality of a graphical summary tends to increase with its simplicity. A
 good graphical summary should force its message on the viewer, and should
 present no obstacles to rapid comprehension. The goal of a graphical summary is
 to simplify analysis by describing the properties of our data more deeply.
